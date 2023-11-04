@@ -1,0 +1,295 @@
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(assets/img/original.jpg);
+  background-size: contain;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 2rem;
+}
+
+.logo {
+  height: 1.3rem;
+  overflow-y: hidden;
+}
+.logo img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.nav-txt {
+  color: #ffffff;
+  font-weight: bold;
+}
+.hero-bundle {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.bundle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 20px;
+}
+
+.bundle-info {
+  flex-shrink: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  color: #1ce783;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin: 0 0 10px 0;
+}
+
+.bundle-img {
+  margin: 20px;
+}
+.bundle-img img {
+  width: 250px;
+  height: 80px;
+}
+
+.bundle-txt {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.bundle-container .hero-button {
+  padding: 10px 1rem 10px 1rem;
+  background-color: #1ce783;
+  border-radius: 5px;
+  width: 20rem;
+  color: black;
+  text-align: center;
+}
+
+.bundle-links {
+  text-align: center;
+}
+
+.bundle-links li {
+  margin: 10px 0 20px 0;
+  text-decoration: underline;
+  list-style: none;
+}
+
+.commercial {
+  background-color: #0b0c0f;
+  height: 100%;
+  padding: 88px 20px 50px;
+  position: relative;
+}
+
+.commercial-header {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+.commercial-slogan {
+  color: white;
+  margin: 16px 0 10px 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.commercial-txt {
+  display: block;
+  color: #ffffff;
+  margin: 0px 33px;
+  font-size: 0.9rem;
+  padding: 16px 0 0;
+  margin: 0 150px 0 150px;
+  line-height: 1.5;
+}
+
+.categories {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 0 125px 0 125px;
+}
+
+.categories-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  width: 280px;
+}
+
+.categories-img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.cat-desc {
+  position: absolute;
+  color: #ffffff;
+  font-size: 25px;
+  top: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.desc-title {
+  font-size: 12px;
+}
+
+.genre {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.commercial-button {
+  text-align: center;
+  display: inline-block;
+  background-color: #1ce783;
+  margin: 20px;
+  padding: 10px 20px;
+  font-weight: 900;
+  color: #0b0c0f;
+  border-radius: 10px;
+}
+
+.commercial-info {
+  color: #afafaf;
+  font-size: 10px;
+}
+.commercial-link {
+  margin: 50px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.live-section {
+  background-image: url(assets/img/sports-bg-1.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  right: 40%;
+  padding: 2rem;
+  overflow-y: hidden;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tab li {
+  margin: 20px;
+  list-style: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.tab .active {
+  border-bottom: 2px solid #ffffff;
+}
+
+.partners-title {
+  font-size: 34px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.partners-txt {
+  color: #ffffff;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.partner-card {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  height: 50px;
+  margin: 10px;
+}
+
+.partner-image img {
+  width: 50px;
+  height: 40px;
+}
+
+@media screen and (max-width: 968px) {
+  header {
+    height: 100vh;
+  }
+  .hero-bundle {
+    top: 60%;
+  }
+  .bundle-container {
+    gap: 0px;
+    padding: 2.5rem;
+  }
+  .bundle-img {
+    margin: 0px;
+  }
+  .bundle-img img {
+    width: 192px;
+    height: 74px;
+    padding: 1rem;
+    margin: 10px;
+  }
+  .bundle-container .hero-button {
+    width: 13rem;
+  }
+  .categories {
+    padding: 0px;
+    gap: 18px;
+  }
+  .categories-card {
+    width: 175px;
+  }
+
+  .commercial-txt {
+    margin: 0;
+  }
+  .wrapper {
+    left: 0;
+    right: 0;
+  }
+}
