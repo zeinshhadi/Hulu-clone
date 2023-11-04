@@ -254,6 +254,50 @@ header {
   height: 40px;
 }
 
+.plan-section {
+  background-color: #0b0c0f;
+  height: 100%;
+  text-align: center;
+}
+
+.plan-topic {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 30px;
+}
+.plan-txt {
+  color: #ffffff;
+  font-size: 24;
+  margin: 20px;
+}
+.plan-txt span {
+  font-weight: bold;
+}
+
+.plan-container {
+  margin: 0 80px;
+  display: flex;
+  flex-direction: column;
+}
+.plan-features:first-child {
+  padding: 50px;
+}
+.plan-features {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 10px;
+  padding: 20px;
+
+  border-top: 1px solid #afafaf;
+}
+
+.plan-item {
+  flex-grow: 1;
+  width: 30px;
+}
+
 @media screen and (max-width: 968px) {
   header {
     height: 100vh;
