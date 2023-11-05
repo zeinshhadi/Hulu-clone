@@ -281,36 +281,84 @@ header {
 .plan-txt span {
   font-weight: bold;
 }
-
-.plan-container {
+.plan-head-container {
   margin: 0 80px;
   display: flex;
-  flex-direction: column;
-}
-
-.plan-item-sticky {
-  padding: 20px;
-  position: sticky;
-  top: 0;
-}
-.plan-type div {
-  display: inline-block;
-  margin: 10px;
-}
-
-.plan-features {
-  display: flex;
-  justify-content: space-evenly;
-
-  margin: 10px;
-  padding: 20px;
-
+  padding-top: 0;
+  justify-content: center;
   border-top: 1px solid #afafaf;
 }
-
-.plan-item {
+.head-toggle {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
   flex-grow: 1;
-  width: 30px;
+  justify-content: flex-end;
+}
+.head-toggle-feature {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.plan-type {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.plan-head {
+  display: flex;
+  padding: 0;
+  text-align: center;
+  flex-grow: 2;
+}
+
+.card-0 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.card-1 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1;
+  align-self: stretch;
+}
+
+.plan-feature-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  text-align: left;
+}
+
+.check-0 {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.check-1 {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: flex-end;
   text-align: center;
 }
 
@@ -384,7 +432,7 @@ input:checked + .slider:before {
   padding: 5px 1px;
   font-size: 14px;
   background-color: #1ce783;
-  margin: 10px 100px;
+  margin: 10px 0;
   border-radius: 15px;
   color: #0b0c0f;
 }
@@ -496,14 +544,30 @@ footer {
     left: 0;
     right: 0;
   }
-  .plan-item-sticky {
-    display: flex;
+  .plan-head-container {
     flex-direction: column;
+  }
+
+  .head-toggle {
+    justify-content: center;
+    border-top: 1px solid #afafaf;
+  }
+  .head-toggle-feature {
+    justify-content: center;
+    border-top: 1px solid #afafaf;
   }
   .plan-item {
     width: 100%;
   }
+
   .head-item-topic {
     margin: 10px 0px;
+  }
+  .card-0 {
+    margin: 0;
+    padding-right: 30px;
+  }
+  .card-1 {
+    margin: 0;
   }
 }
