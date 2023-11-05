@@ -137,6 +137,11 @@ header {
   width: 280px;
 }
 
+.categories-card:hover {
+  border: 2px solid #afafaf;
+  filter: brightness(50%);
+}
+
 .categories-img img {
   object-fit: contain;
   height: 100%;
@@ -266,11 +271,13 @@ header {
   color: #ffffff;
   margin: 30px;
 }
+
 .plan-txt {
   color: #ffffff;
-  font-size: 24;
+  font-size: 24px;
   margin: 20px;
 }
+
 .plan-txt span {
   font-weight: bold;
 }
@@ -280,9 +287,17 @@ header {
   display: flex;
   flex-direction: column;
 }
-.plan-features:first-child {
-  padding: 50px;
+
+.plan-item-sticky {
+  padding: 20px;
+  position: sticky;
+  top: 0;
 }
+.plan-type div {
+  display: inline-block;
+  margin: 10px;
+}
+
 .plan-features {
   display: flex;
   justify-content: space-evenly;
@@ -296,6 +311,104 @@ header {
 .plan-item {
   flex-grow: 1;
   width: 30px;
+  text-align: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.head-item {
+  text-align: center;
+}
+
+.head-item-topic {
+  padding: 5px 1px;
+  font-size: 14px;
+  background-color: #1ce783;
+  margin: 10px 100px;
+  border-radius: 15px;
+  color: #0b0c0f;
+}
+
+.no-display {
+  margin: 19px 100px;
+  background-color: #0b0c0f;
+}
+
+.head-txt p {
+  font-weight: bold;
+  font-size: 23px;
+}
+.head-txt p span {
+  color: #afafaf;
+  font-weight: bold;
+}
+
+.head-button {
+  background-color: #ffffff;
+  padding: 10px 5px;
+  color: #0b0c0f;
+  margin: 10px 40px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 968px) {
