@@ -333,35 +333,33 @@ header {
   flex: 1 1;
   align-self: stretch;
 }
-
+.seperator {
+  width: 1px;
+  height: 20px;
+  background: #e8eaed;
+}
 .plan-feature-item {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .pricing {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  text-align: left;
+  width: 520px;
 }
-
 .check-0 {
   display: flex;
   flex: 1 1;
-  justify-content: center;
-  align-items: flex-end;
   text-align: center;
+  align-self: stretch;
+  justify-content: center;
 }
-.check-1 {
+.check-0 {
   display: flex;
   flex: 1 1;
-  justify-content: center;
-  align-items: flex-end;
   text-align: center;
+  align-self: stretch;
+  justify-content: center;
 }
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -459,51 +457,38 @@ input:checked + .slider:before {
   border-radius: 5px;
 }
 
-footer {
-  margin: 0 auto;
-  padding: 0 145px;
+.footer-container {
+  text-align: left;
 }
 
-.footer-container {
+.footer-links {
   display: flex;
+  justify-content: center;
+  padding: 52px 0 86px;
+  gap: 50px;
 }
-.browse {
-  display: flex;
-  justify-content: flex-start;
-}
+
 .browse-item {
-  flex-grow: 1;
   display: flex;
   justify-content: space-evenly;
+  gap: 50px;
 }
 
-.browse-category ul li {
-  color: #0b0c0f;
-  margin: 10px;
-  font-size: 18px;
-}
-
-.help ul {
-  margin: 20px;
-}
-
-.help ul li {
-  margin: 10px;
-  color: #0b0c0f;
-}
-
-.about-us ul {
-  margin: 20px;
-}
-
-.about-us ul li {
-  margin: 10px;
-  color: #0b0c0f;
+ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #586174;
 }
 .title-footer {
-  color: #0b0c0f;
+  font-size: 12px;
   font-weight: bold;
-  display: block;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #272c34;
+  padding: 8px 0px;
 }
 
 @media screen and (max-width: 968px) {
