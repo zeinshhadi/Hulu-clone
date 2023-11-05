@@ -295,13 +295,7 @@ header {
   flex-grow: 1;
   justify-content: flex-end;
 }
-.head-toggle-feature {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  flex-grow: 1;
-  justify-content: flex-end;
-}
+
 .plan-type {
   margin: 20px;
   display: flex;
@@ -333,33 +327,32 @@ header {
   flex: 1 1;
   align-self: stretch;
 }
-.seperator {
-  width: 1px;
-  height: 20px;
-  background: #e8eaed;
-}
 .plan-feature-item {
+  margin: 0 80px;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  padding-top: 0;
+  justify-content: space-around;
+  border-top: 1px solid #afafaf;
+}
+.plan-feature-standard {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: flex-start;
+
+  text-align: left;
+  font-size: 14px;
 }
 .pricing {
-  width: 520px;
+  flex-grow: 1;
 }
 .check-0 {
   display: flex;
-  flex: 1 1;
-  text-align: center;
-  align-self: stretch;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 2;
 }
-.check-0 {
-  display: flex;
-  flex: 1 1;
-  text-align: center;
-  align-self: stretch;
-  justify-content: center;
-}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -442,7 +435,7 @@ input:checked + .slider:before {
 
 .head-txt p {
   font-weight: bold;
-  font-size: 23px;
+  font-size: 1rem;
 }
 .head-txt p span {
   color: #afafaf;
@@ -555,11 +548,12 @@ ul li {
   }
   .plan-head-container {
     flex-direction: column;
+    margin: 0;
   }
 
   .head-toggle {
     justify-content: center;
-    border-top: 1px solid #afafaf;
+    border: 1px solid #afafaf;
   }
   .head-toggle-feature {
     justify-content: center;
@@ -571,6 +565,30 @@ ul li {
 
   .head-item-topic {
     margin: 10px 0px;
+    font-size: 7px;
+    padding: 5px 24px;
+  }
+  .head-button {
+    margin: 10px 0;
+  }
+  .plan-feature-item {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .plan-feature-standard {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .plan-feature-standard div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .plan-feature-item {
+    margin: 0;
+  }
+  .check-0 {
+    gap: 100px;
   }
   .card-0 {
     margin: 0;
@@ -578,6 +596,9 @@ ul li {
   }
   .card-1 {
     margin: 0;
+    justify-content: flex-end;
+    padding: 0;
+    border-left: 1px solid #afafaf;
   }
   .footer-container {
     margin: 0;
