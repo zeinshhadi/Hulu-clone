@@ -196,13 +196,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow-y: auto;
   height: 100%;
   position: absolute;
   left: 10%;
   right: 40%;
   padding: 2rem;
-  overflow-y: hidden;
 }
 .info-container {
   display: flex;
@@ -260,6 +259,7 @@ header {
 }
 
 .plan-section {
+  position: relative;
   background-color: #0b0c0f;
   height: 100%;
   text-align: center;
@@ -281,7 +281,14 @@ header {
 .plan-txt span {
   font-weight: bold;
 }
+.scrolling {
+  position: relative;
+}
 .plan-head-container {
+  top: 0;
+  overflow: auto;
+  z-index: 1;
+  position: sticky;
   margin: 0 80px;
   display: flex;
   padding-top: 0;
@@ -333,6 +340,7 @@ header {
   padding-top: 0;
   justify-content: space-around;
   border-top: 1px solid #afafaf;
+  padding: 20px;
 }
 .plan-feature-standard {
   display: flex;
