@@ -221,7 +221,7 @@ header {
   margin: 20px;
   list-style: none;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 11px;
   font-weight: bold;
   padding: 10px 0;
 }
@@ -673,5 +673,12 @@ ul li {
   }
   .check-0 {
     padding: 20px;
+  }
+  .footer-links {
+    gap: 13px;
+  }
+  .tab li {
+    font-size: 10px;
+    margin: 8px;
   }
 }
