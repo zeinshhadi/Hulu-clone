@@ -347,16 +347,17 @@ header {
   align-items: flex-start;
   flex-shrink: 0;
   justify-content: flex-start;
-
+  flex-basis: 580px;
   text-align: left;
   font-size: 14px;
 }
 .pricing {
   flex-grow: 1;
+  flex-basis: 150px;
 }
 .check-0 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-grow: 2;
 }
@@ -586,7 +587,12 @@ ul li {
   .plan-feature-standard {
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
+    flex-basis: 0px;
+    overflow: hidden;
+  }
+  .pricing {
+    flex-basis: 0px;
   }
   .plan-feature-standard div {
     flex-direction: column;
@@ -618,5 +624,8 @@ ul li {
   .browse-item {
     justify-content: flex-start;
     gap: 10px;
+  }
+  .check-0 {
+    padding: 20px;
   }
 }
