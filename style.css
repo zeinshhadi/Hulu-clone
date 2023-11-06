@@ -334,6 +334,7 @@ header {
   flex: 1 1;
   align-self: stretch;
 }
+
 .plan-feature-item {
   margin: 0 80px;
   display: flex;
@@ -367,7 +368,7 @@ header {
   align-items: center;
   flex-grow: 2;
 }
-
+/* switch from: https://www.w3schools.com/howto/howto_css_switch.asp*/
 /* The switch - the box around the slider */
 .switch {
   position: relative;
