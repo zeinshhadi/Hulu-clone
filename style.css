@@ -467,8 +467,9 @@ input:checked + .slider:before {
   background-color: #ffffff;
   padding: 10px 5px;
   color: #0b0c0f;
-  margin: 10px 40px;
+  margin: 10px 0px;
   border-radius: 5px;
+  width: 200px;
 }
 
 .footer-container {
@@ -609,8 +610,9 @@ ul li {
 
   .head-item-topic {
     margin: 10px 0px;
-    font-size: 7px;
+    font-size: 10px;
     padding: 5px 24px;
+    width: 100px;
   }
   .head-button {
     margin: 10px 0;
@@ -680,5 +682,8 @@ ul li {
   .tab li {
     font-size: 10px;
     margin: 8px;
+  }
+  .head-button {
+    width: 180px;
   }
 }
